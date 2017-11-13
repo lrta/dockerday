@@ -5,6 +5,7 @@ RUN yum -y update \
   && yum -y install wget \
   && yum -y install which \
   && yum -y install java-1.8.0-openjdk-devel \
+  && wget -O /etc/yum.repos.d/hdp.repo http://public-repo-1.hortonworks.com/HDP/centos7/2.x/updates/2.6.1.0/hdp.repo \
   && yum -y install hive \
   && yum -y install spark
 
